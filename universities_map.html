@@ -1,0 +1,3381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_756fd6b16a9d89e9ef8bc380cb6cffb5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_756fd6b16a9d89e9ef8bc380cb6cffb5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_756fd6b16a9d89e9ef8bc380cb6cffb5 = L.map(
+                "map_756fd6b16a9d89e9ef8bc380cb6cffb5",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_67ce866d8290d10f1dd5d78cd770d7ed = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_67ce866d8290d10f1dd5d78cd770d7ed.addTo(map_756fd6b16a9d89e9ef8bc380cb6cffb5);
+        
+    
+            var marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_a236e3dbb421f7b12e5356fd447d862c = L.marker(
+                [47.2455013, -122.438329],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_4c79cec4467e336531f287ca8a65d93e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4707af49e3e5769b08fbd87c212fac76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b8ba8a4a4d59654eb91c2a0a24f8726 = $(`<div id="html_7b8ba8a4a4d59654eb91c2a0a24f8726" style="width: 100.0%; height: 100.0%;"><b>University of Puget Sound</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_4707af49e3e5769b08fbd87c212fac76.setContent(html_7b8ba8a4a4d59654eb91c2a0a24f8726);
+            
+        
+
+        marker_a236e3dbb421f7b12e5356fd447d862c.bindPopup(popup_4707af49e3e5769b08fbd87c212fac76)
+        ;
+
+        
+    
+    
+                marker_a236e3dbb421f7b12e5356fd447d862c.setIcon(icon_4c79cec4467e336531f287ca8a65d93e);
+            
+    
+            var marker_4db3450e1011ef18fceeaa063e757420 = L.marker(
+                [42.8339562, -88.7306517],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_e1aae02535330c4e950d2edc1f207515 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b3849e8e4209df194214b4aac173c6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04c598e5a134b45d5b0fc9390aee8a21 = $(`<div id="html_04c598e5a134b45d5b0fc9390aee8a21" style="width: 100.0%; height: 100.0%;"><b>University of Wisconsin Whitewater</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_0b3849e8e4209df194214b4aac173c6d.setContent(html_04c598e5a134b45d5b0fc9390aee8a21);
+            
+        
+
+        marker_4db3450e1011ef18fceeaa063e757420.bindPopup(popup_0b3849e8e4209df194214b4aac173c6d)
+        ;
+
+        
+    
+    
+                marker_4db3450e1011ef18fceeaa063e757420.setIcon(icon_e1aae02535330c4e950d2edc1f207515);
+            
+    
+            var marker_0425aa70633cb44821503653edc41ca3 = L.marker(
+                [39.8208998, -84.0193858],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_c0eadcede023bd9e83eb21e6601dda74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a4be8c18cbf84ff790d9dd6551bd4d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eebac433e543f950cc99ee1c6c3f9af0 = $(`<div id="html_eebac433e543f950cc99ee1c6c3f9af0" style="width: 100.0%; height: 100.0%;"><b>Wright State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_1a4be8c18cbf84ff790d9dd6551bd4d6.setContent(html_eebac433e543f950cc99ee1c6c3f9af0);
+            
+        
+
+        marker_0425aa70633cb44821503653edc41ca3.bindPopup(popup_1a4be8c18cbf84ff790d9dd6551bd4d6)
+        ;
+
+        
+    
+    
+                marker_0425aa70633cb44821503653edc41ca3.setIcon(icon_c0eadcede023bd9e83eb21e6601dda74);
+            
+    
+            var marker_59ba0e1bffa2744a2ec838cc3477ca0e = L.marker(
+                [33.7690164, -118.191604],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_7b843facc7bb2d44bf859473d73961dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bbf6cb106bd83a1ce181557d030de29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a21aa54ccabdc497a6d2bd5a79defb7c = $(`<div id="html_a21aa54ccabdc497a6d2bd5a79defb7c" style="width: 100.0%; height: 100.0%;"><b>CSULB</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_2bbf6cb106bd83a1ce181557d030de29.setContent(html_a21aa54ccabdc497a6d2bd5a79defb7c);
+            
+        
+
+        marker_59ba0e1bffa2744a2ec838cc3477ca0e.bindPopup(popup_2bbf6cb106bd83a1ce181557d030de29)
+        ;
+
+        
+    
+    
+                marker_59ba0e1bffa2744a2ec838cc3477ca0e.setIcon(icon_7b843facc7bb2d44bf859473d73961dc);
+            
+    
+            var marker_d6548ded4372e29eb0e8da3e57f3b7ac = L.marker(
+                [33.8137919, -85.7612872],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_cf2155db9dafea5754945e11cf3f8740 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28aaaa4219bca339a66108da7ca63abd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_872cc078a6a59f2c3a2b015432a84289 = $(`<div id="html_872cc078a6a59f2c3a2b015432a84289" style="width: 100.0%; height: 100.0%;"><b>Jacksonville State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_28aaaa4219bca339a66108da7ca63abd.setContent(html_872cc078a6a59f2c3a2b015432a84289);
+            
+        
+
+        marker_d6548ded4372e29eb0e8da3e57f3b7ac.bindPopup(popup_28aaaa4219bca339a66108da7ca63abd)
+        ;
+
+        
+    
+    
+                marker_d6548ded4372e29eb0e8da3e57f3b7ac.setIcon(icon_cf2155db9dafea5754945e11cf3f8740);
+            
+    
+            var marker_7f2191bdd7e5b786d93a3cf393975c4c = L.marker(
+                [41.6332267, -70.9879928],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_ec39177dfee6988b2a1850259a7a27e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12a5ebf6e55f18ac8cf10581bb4d3d38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a22e129badd076e854f1c05d90f0ddd = $(`<div id="html_8a22e129badd076e854f1c05d90f0ddd" style="width: 100.0%; height: 100.0%;"><b>University of Massachusetts Dartmouth</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_12a5ebf6e55f18ac8cf10581bb4d3d38.setContent(html_8a22e129badd076e854f1c05d90f0ddd);
+            
+        
+
+        marker_7f2191bdd7e5b786d93a3cf393975c4c.bindPopup(popup_12a5ebf6e55f18ac8cf10581bb4d3d38)
+        ;
+
+        
+    
+    
+                marker_7f2191bdd7e5b786d93a3cf393975c4c.setIcon(icon_ec39177dfee6988b2a1850259a7a27e3);
+            
+    
+            var marker_8cfe3092427d2e1f96a76237926e1efe = L.marker(
+                [33.9824949, -117.374238],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_30eed7f2602070b2ee3990dd0e40bf7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8103d168f71c4ec5affd230a58e8240f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20c1b6b8d88923deee9b09c539910cda = $(`<div id="html_20c1b6b8d88923deee9b09c539910cda" style="width: 100.0%; height: 100.0%;"><b>California Baptist University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_8103d168f71c4ec5affd230a58e8240f.setContent(html_20c1b6b8d88923deee9b09c539910cda);
+            
+        
+
+        marker_8cfe3092427d2e1f96a76237926e1efe.bindPopup(popup_8103d168f71c4ec5affd230a58e8240f)
+        ;
+
+        
+    
+    
+                marker_8cfe3092427d2e1f96a76237926e1efe.setIcon(icon_30eed7f2602070b2ee3990dd0e40bf7d);
+            
+    
+            var marker_3d106f02e96dee906c0796745e53db11 = L.marker(
+                [47.6571934, -117.42351],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_ffce95e8530d611a861f9c1681ec0348 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edb56bbdb3b0975f0516b47fc64a2056 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_939e901bf584704c86e25bb2b35a7dc1 = $(`<div id="html_939e901bf584704c86e25bb2b35a7dc1" style="width: 100.0%; height: 100.0%;"><b>Gonzaga University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_edb56bbdb3b0975f0516b47fc64a2056.setContent(html_939e901bf584704c86e25bb2b35a7dc1);
+            
+        
+
+        marker_3d106f02e96dee906c0796745e53db11.bindPopup(popup_edb56bbdb3b0975f0516b47fc64a2056)
+        ;
+
+        
+    
+    
+                marker_3d106f02e96dee906c0796745e53db11.setIcon(icon_ffce95e8530d611a861f9c1681ec0348);
+            
+    
+            var marker_af452821203c126699871d42c0cb2363 = L.marker(
+                [37.7792588, -122.4193286],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_6127bc362248235dbb7bb0f145c6aa01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_024fc762c9769ac08f368b5c67e4c529 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2859c297de776e30a1989b5882fc0e82 = $(`<div id="html_2859c297de776e30a1989b5882fc0e82" style="width: 100.0%; height: 100.0%;"><b>San Francisco State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_024fc762c9769ac08f368b5c67e4c529.setContent(html_2859c297de776e30a1989b5882fc0e82);
+            
+        
+
+        marker_af452821203c126699871d42c0cb2363.bindPopup(popup_024fc762c9769ac08f368b5c67e4c529)
+        ;
+
+        
+    
+    
+                marker_af452821203c126699871d42c0cb2363.setIcon(icon_6127bc362248235dbb7bb0f145c6aa01);
+            
+    
+            var marker_875c7b8647d9ae8d88a70d4687afbbde = L.marker(
+                [42.8867166, -78.8783922],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_4b0965a18fd177aa0f579ea5d9bce150 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d00c5470550e4f25eb09e177f7fc192 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_266eda814e64f2cee0218bf1c2022c21 = $(`<div id="html_266eda814e64f2cee0218bf1c2022c21" style="width: 100.0%; height: 100.0%;"><b>University at Buffalo, The State University of New York</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_3d00c5470550e4f25eb09e177f7fc192.setContent(html_266eda814e64f2cee0218bf1c2022c21);
+            
+        
+
+        marker_875c7b8647d9ae8d88a70d4687afbbde.bindPopup(popup_3d00c5470550e4f25eb09e177f7fc192)
+        ;
+
+        
+    
+    
+                marker_875c7b8647d9ae8d88a70d4687afbbde.setIcon(icon_4b0965a18fd177aa0f579ea5d9bce150);
+            
+    
+            var marker_63fff6e7b9931aba371498d54ebba077 = L.marker(
+                [31.0560132, -97.464453],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_d013ee4c133b1cd1e0075fc9cf4c687a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cef20e06bda01eb7bfca2edb08245de2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36dc939cb2f9b4be6938b8488aedd17b = $(`<div id="html_36dc939cb2f9b4be6938b8488aedd17b" style="width: 100.0%; height: 100.0%;"><b>University of Mary Hardin-Baylor</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_cef20e06bda01eb7bfca2edb08245de2.setContent(html_36dc939cb2f9b4be6938b8488aedd17b);
+            
+        
+
+        marker_63fff6e7b9931aba371498d54ebba077.bindPopup(popup_cef20e06bda01eb7bfca2edb08245de2)
+        ;
+
+        
+    
+    
+                marker_63fff6e7b9931aba371498d54ebba077.setIcon(icon_d013ee4c133b1cd1e0075fc9cf4c687a);
+            
+    
+            var marker_c0d1f4f7454af4370ff8e3a25033a45a = L.marker(
+                [38.3396367, -122.701098],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_0555c2a22e73f44d09bab5cb6efc61dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccb69036679054dffae870e0e5f142b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fecac3afa1a4dafe995771882708acc0 = $(`<div id="html_fecac3afa1a4dafe995771882708acc0" style="width: 100.0%; height: 100.0%;"><b>Sonoma State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_ccb69036679054dffae870e0e5f142b7.setContent(html_fecac3afa1a4dafe995771882708acc0);
+            
+        
+
+        marker_c0d1f4f7454af4370ff8e3a25033a45a.bindPopup(popup_ccb69036679054dffae870e0e5f142b7)
+        ;
+
+        
+    
+    
+                marker_c0d1f4f7454af4370ff8e3a25033a45a.setIcon(icon_0555c2a22e73f44d09bab5cb6efc61dd);
+            
+    
+            var marker_da873f457bbc32cf89ae9e9fbcd717ce = L.marker(
+                [30.421309, -87.2169149],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_692f7736e0760c0eb4d578dcff042841 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbbbfb3fcfc80f773db41934dc5cdb2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd6a72a2d816e9dd7f364cdf91ebecb4 = $(`<div id="html_dd6a72a2d816e9dd7f364cdf91ebecb4" style="width: 100.0%; height: 100.0%;"><b>University of West Florida</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_cbbbfb3fcfc80f773db41934dc5cdb2b.setContent(html_dd6a72a2d816e9dd7f364cdf91ebecb4);
+            
+        
+
+        marker_da873f457bbc32cf89ae9e9fbcd717ce.bindPopup(popup_cbbbfb3fcfc80f773db41934dc5cdb2b)
+        ;
+
+        
+    
+    
+                marker_da873f457bbc32cf89ae9e9fbcd717ce.setIcon(icon_692f7736e0760c0eb4d578dcff042841);
+            
+    
+            var marker_03c1cc2c4ada0296af299f285b3ce5d9 = L.marker(
+                [34.0234337, -84.6154897],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_7bd26ab1e33cb62acb300f8c068a0481 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84a758e255ef0449c54fe600c6832c72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70cad47867655d67a7360864d7017a14 = $(`<div id="html_70cad47867655d67a7360864d7017a14" style="width: 100.0%; height: 100.0%;"><b>Kennesaw State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_84a758e255ef0449c54fe600c6832c72.setContent(html_70cad47867655d67a7360864d7017a14);
+            
+        
+
+        marker_03c1cc2c4ada0296af299f285b3ce5d9.bindPopup(popup_84a758e255ef0449c54fe600c6832c72)
+        ;
+
+        
+    
+    
+                marker_03c1cc2c4ada0296af299f285b3ce5d9.setIcon(icon_7bd26ab1e33cb62acb300f8c068a0481);
+            
+    
+            var marker_fc0feb9ac07796baf70e90a568b340bc = L.marker(
+                [35.0841034, -106.650985],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_c7cf11cfd445b0f5e2d18218e53e419d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dd8ec27db72f4d51f2bea2283e2942a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fac30d64c985e0d0f7ae74ff7bff0761 = $(`<div id="html_fac30d64c985e0d0f7ae74ff7bff0761" style="width: 100.0%; height: 100.0%;"><b>University of New Mexico</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_0dd8ec27db72f4d51f2bea2283e2942a.setContent(html_fac30d64c985e0d0f7ae74ff7bff0761);
+            
+        
+
+        marker_fc0feb9ac07796baf70e90a568b340bc.bindPopup(popup_0dd8ec27db72f4d51f2bea2283e2942a)
+        ;
+
+        
+    
+    
+                marker_fc0feb9ac07796baf70e90a568b340bc.setIcon(icon_c7cf11cfd445b0f5e2d18218e53e419d);
+            
+    
+            var marker_f21c7c21a7fb51c26949b83dd1e11f81 = L.marker(
+                [39.5261788, -119.812658],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_f873d45109cbefd0bb0cb95efbfa75c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1939aeeadc8613673380d8eb173bc43b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b98d49f56c300685559a677389609c5 = $(`<div id="html_9b98d49f56c300685559a677389609c5" style="width: 100.0%; height: 100.0%;"><b>University of Nevada, Reno</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_1939aeeadc8613673380d8eb173bc43b.setContent(html_9b98d49f56c300685559a677389609c5);
+            
+        
+
+        marker_f21c7c21a7fb51c26949b83dd1e11f81.bindPopup(popup_1939aeeadc8613673380d8eb173bc43b)
+        ;
+
+        
+    
+    
+                marker_f21c7c21a7fb51c26949b83dd1e11f81.setIcon(icon_f873d45109cbefd0bb0cb95efbfa75c9);
+            
+    
+            var marker_541660b9e04782ebce05825f946518a8 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_f669b3a70a75d4fecb7612bd9edff0fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f50bdf651f7a3b739a11c9953f5d7ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4756d93f68d97790c70e60cc542acad = $(`<div id="html_c4756d93f68d97790c70e60cc542acad" style="width: 100.0%; height: 100.0%;"><b>Columbia University (School of General Studies)</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_3f50bdf651f7a3b739a11c9953f5d7ef.setContent(html_c4756d93f68d97790c70e60cc542acad);
+            
+        
+
+        marker_541660b9e04782ebce05825f946518a8.bindPopup(popup_3f50bdf651f7a3b739a11c9953f5d7ef)
+        ;
+
+        
+    
+    
+                marker_541660b9e04782ebce05825f946518a8.setIcon(icon_f669b3a70a75d4fecb7612bd9edff0fe);
+            
+    
+            var marker_f7f19580d1ea7d5acb1c8407c6e8983d = L.marker(
+                [45.5202471, -122.674194],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_9d181b9f1f98fcf0d9320f1c12192a81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6cfbaecea87168ed9bbeba428550752 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9a6260660841f5cf694367710d2cb96 = $(`<div id="html_f9a6260660841f5cf694367710d2cb96" style="width: 100.0%; height: 100.0%;"><b>University of Western States</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_d6cfbaecea87168ed9bbeba428550752.setContent(html_f9a6260660841f5cf694367710d2cb96);
+            
+        
+
+        marker_f7f19580d1ea7d5acb1c8407c6e8983d.bindPopup(popup_d6cfbaecea87168ed9bbeba428550752)
+        ;
+
+        
+    
+    
+                marker_f7f19580d1ea7d5acb1c8407c6e8983d.setIcon(icon_9d181b9f1f98fcf0d9320f1c12192a81);
+            
+    
+            var marker_a890325095922737d5f5dfec6a5a76d9 = L.marker(
+                [38.5435526, -121.739005],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_44057cec59c6d8ede25188f644cbe42c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b34b72eab994ebc5fa50d90ff49b3bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1386c72f14cb5eb1c5a08496e7a72900 = $(`<div id="html_1386c72f14cb5eb1c5a08496e7a72900" style="width: 100.0%; height: 100.0%;"><b>University of California, Davis</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_2b34b72eab994ebc5fa50d90ff49b3bc.setContent(html_1386c72f14cb5eb1c5a08496e7a72900);
+            
+        
+
+        marker_a890325095922737d5f5dfec6a5a76d9.bindPopup(popup_2b34b72eab994ebc5fa50d90ff49b3bc)
+        ;
+
+        
+    
+    
+                marker_a890325095922737d5f5dfec6a5a76d9.setIcon(icon_44057cec59c6d8ede25188f644cbe42c);
+            
+    
+            var marker_218ea0ffc23adf2c7a6c253ea2454fb7 = L.marker(
+                [41.2230048, -111.9738429],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_3620b0b62d8405160193b918ea664e1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ccd5bf562ea8710df55875010e6943c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e817d624f75ab098ed389a5730ab34c5 = $(`<div id="html_e817d624f75ab098ed389a5730ab34c5" style="width: 100.0%; height: 100.0%;"><b>Weber State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_4ccd5bf562ea8710df55875010e6943c.setContent(html_e817d624f75ab098ed389a5730ab34c5);
+            
+        
+
+        marker_218ea0ffc23adf2c7a6c253ea2454fb7.bindPopup(popup_4ccd5bf562ea8710df55875010e6943c)
+        ;
+
+        
+    
+    
+                marker_218ea0ffc23adf2c7a6c253ea2454fb7.setIcon(icon_3620b0b62d8405160193b918ea664e1c);
+            
+    
+            var marker_1c7f51475513413b2421378915254587 = L.marker(
+                [47.0451022, -122.8950075],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_9ae8ef759f082e84c50e3008cbcac085 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a71a49a68925dca4ecc12d52843baa7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5ba2b4d11077f5a29410315c0b44a2f = $(`<div id="html_a5ba2b4d11077f5a29410315c0b44a2f" style="width: 100.0%; height: 100.0%;"><b>The Evergreen State College</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_6a71a49a68925dca4ecc12d52843baa7.setContent(html_a5ba2b4d11077f5a29410315c0b44a2f);
+            
+        
+
+        marker_1c7f51475513413b2421378915254587.bindPopup(popup_6a71a49a68925dca4ecc12d52843baa7)
+        ;
+
+        
+    
+    
+                marker_1c7f51475513413b2421378915254587.setIcon(icon_9ae8ef759f082e84c50e3008cbcac085);
+            
+    
+            var marker_26c767ee5f06f783ed9efe9bbd9f5da1 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_679d9ed9d64d68b5f9aa084008fcc307 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62cb2175c6854aa9630845ac22d42410 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f1fa6800d7f57202ea547623573bcf3 = $(`<div id="html_6f1fa6800d7f57202ea547623573bcf3" style="width: 100.0%; height: 100.0%;"><b>Seattle Pacific University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_62cb2175c6854aa9630845ac22d42410.setContent(html_6f1fa6800d7f57202ea547623573bcf3);
+            
+        
+
+        marker_26c767ee5f06f783ed9efe9bbd9f5da1.bindPopup(popup_62cb2175c6854aa9630845ac22d42410)
+        ;
+
+        
+    
+    
+                marker_26c767ee5f06f783ed9efe9bbd9f5da1.setIcon(icon_679d9ed9d64d68b5f9aa084008fcc307);
+            
+    
+            var marker_98f4206ead625b5fb936f4802758dc1c = L.marker(
+                [33.6856969, -117.825981],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_5c1aace05ce5fdd8d7a37b54acc8a47a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bd5249c9a0919cf595b07e1fd20517d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc83fb0431732ec77c427662271ea8fd = $(`<div id="html_bc83fb0431732ec77c427662271ea8fd" style="width: 100.0%; height: 100.0%;"><b>Westcliff University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_1bd5249c9a0919cf595b07e1fd20517d.setContent(html_bc83fb0431732ec77c427662271ea8fd);
+            
+        
+
+        marker_98f4206ead625b5fb936f4802758dc1c.bindPopup(popup_1bd5249c9a0919cf595b07e1fd20517d)
+        ;
+
+        
+    
+    
+                marker_98f4206ead625b5fb936f4802758dc1c.setIcon(icon_5c1aace05ce5fdd8d7a37b54acc8a47a);
+            
+    
+            var marker_3b8ebf5c8134d09c2fd395f691b2055c = L.marker(
+                [47.6571934, -117.42351],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_2c69f3246f690aa0f65a075952343415 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_026a6fd3f231f2c7f8ee0b1dd16a0369 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f78325498945fc5a902cd9bf7cd1da8 = $(`<div id="html_9f78325498945fc5a902cd9bf7cd1da8" style="width: 100.0%; height: 100.0%;"><b>Whitworth University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_026a6fd3f231f2c7f8ee0b1dd16a0369.setContent(html_9f78325498945fc5a902cd9bf7cd1da8);
+            
+        
+
+        marker_3b8ebf5c8134d09c2fd395f691b2055c.bindPopup(popup_026a6fd3f231f2c7f8ee0b1dd16a0369)
+        ;
+
+        
+    
+    
+                marker_3b8ebf5c8134d09c2fd395f691b2055c.setIcon(icon_2c69f3246f690aa0f65a075952343415);
+            
+    
+            var marker_f174cf0eee14975c5e873cf28a8e73d3 = L.marker(
+                [46.877229, -96.789821],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_2b04abd6a99a8a08a0cb014f0146e5a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0215f583d5da2a6b2d9484f30befd0b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fd0cd1d0e9b736b48b76e1b16d56bb8 = $(`<div id="html_4fd0cd1d0e9b736b48b76e1b16d56bb8" style="width: 100.0%; height: 100.0%;"><b>North Dakota State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_0215f583d5da2a6b2d9484f30befd0b0.setContent(html_4fd0cd1d0e9b736b48b76e1b16d56bb8);
+            
+        
+
+        marker_f174cf0eee14975c5e873cf28a8e73d3.bindPopup(popup_0215f583d5da2a6b2d9484f30befd0b0)
+        ;
+
+        
+    
+    
+                marker_f174cf0eee14975c5e873cf28a8e73d3.setIcon(icon_2b04abd6a99a8a08a0cb014f0146e5a4);
+            
+    
+            var marker_f968976c479917c97e828fc0742f38f2 = L.marker(
+                [42.3554334, -71.060511],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_4879ea829194e2f75bfbfc11df2d952d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ddc407bcbf5e9cacd75539be9ff2134 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3c7e51b1de1fd8ee7dcef615fe19372 = $(`<div id="html_f3c7e51b1de1fd8ee7dcef615fe19372" style="width: 100.0%; height: 100.0%;"><b>Massachusetts College of Pharmacy and Health Sciences</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_8ddc407bcbf5e9cacd75539be9ff2134.setContent(html_f3c7e51b1de1fd8ee7dcef615fe19372);
+            
+        
+
+        marker_f968976c479917c97e828fc0742f38f2.bindPopup(popup_8ddc407bcbf5e9cacd75539be9ff2134)
+        ;
+
+        
+    
+    
+                marker_f968976c479917c97e828fc0742f38f2.setIcon(icon_4879ea829194e2f75bfbfc11df2d952d);
+            
+    
+            var marker_63118879e22f453b114772ddfdfb494f = L.marker(
+                [42.7795273, -96.929101],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_b158a16d7667417c6d98f38166d6b1de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbd0d3d7a16a9c72cdff93184e15bb36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbcb9fe987fbaf466b75b7b2f09d1aa0 = $(`<div id="html_dbcb9fe987fbaf466b75b7b2f09d1aa0" style="width: 100.0%; height: 100.0%;"><b>University of South Dakota</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_fbd0d3d7a16a9c72cdff93184e15bb36.setContent(html_dbcb9fe987fbaf466b75b7b2f09d1aa0);
+            
+        
+
+        marker_63118879e22f453b114772ddfdfb494f.bindPopup(popup_fbd0d3d7a16a9c72cdff93184e15bb36)
+        ;
+
+        
+    
+    
+                marker_63118879e22f453b114772ddfdfb494f.setIcon(icon_b158a16d7667417c6d98f38166d6b1de);
+            
+    
+            var marker_99ff4420cdbc98e75c1c4ac85d5dd45d = L.marker(
+                [33.4255117, -111.940016],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_b00b89138394cd7331c0c3f44907adf4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d04c42c9d6db3338ef0a9b98511f3a62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91cfe97b393eef178a51cb91c770005c = $(`<div id="html_91cfe97b393eef178a51cb91c770005c" style="width: 100.0%; height: 100.0%;"><b>Arizona State University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_d04c42c9d6db3338ef0a9b98511f3a62.setContent(html_91cfe97b393eef178a51cb91c770005c);
+            
+        
+
+        marker_99ff4420cdbc98e75c1c4ac85d5dd45d.bindPopup(popup_d04c42c9d6db3338ef0a9b98511f3a62)
+        ;
+
+        
+    
+    
+                marker_99ff4420cdbc98e75c1c4ac85d5dd45d.setIcon(icon_b00b89138394cd7331c0c3f44907adf4);
+            
+    
+            var marker_e43b3233d50f1f8f91b077090fabf95a = L.marker(
+                [33.7544657, -84.3898151],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_84f8763c2ceee4d29dea73dd714d2359 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa19058103116f861a5727425ab2ef8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22513a7b2a2b08d191f89e6ba8d5369c = $(`<div id="html_22513a7b2a2b08d191f89e6ba8d5369c" style="width: 100.0%; height: 100.0%;"><b>Georgia State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_aa19058103116f861a5727425ab2ef8b.setContent(html_22513a7b2a2b08d191f89e6ba8d5369c);
+            
+        
+
+        marker_e43b3233d50f1f8f91b077090fabf95a.bindPopup(popup_aa19058103116f861a5727425ab2ef8b)
+        ;
+
+        
+    
+    
+                marker_e43b3233d50f1f8f91b077090fabf95a.setIcon(icon_84f8763c2ceee4d29dea73dd714d2359);
+            
+    
+            var marker_38dcfdd09ad4073bb972bfe151bdb239 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_96e231d2ceeb90b2cd0de838b6499859 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af54dc2f873a0a3f6df201ffe70b4d74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a23271e3141bcbb2643eda1af5e125ca = $(`<div id="html_a23271e3141bcbb2643eda1af5e125ca" style="width: 100.0%; height: 100.0%;"><b>DePaul University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_af54dc2f873a0a3f6df201ffe70b4d74.setContent(html_a23271e3141bcbb2643eda1af5e125ca);
+            
+        
+
+        marker_38dcfdd09ad4073bb972bfe151bdb239.bindPopup(popup_af54dc2f873a0a3f6df201ffe70b4d74)
+        ;
+
+        
+    
+    
+                marker_38dcfdd09ad4073bb972bfe151bdb239.setIcon(icon_96e231d2ceeb90b2cd0de838b6499859);
+            
+    
+            var marker_bfee006f13c4103d778315d05fc6edd7 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_09c8c31383a9fb718d7046d39d35184c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e48a704a20096fa511e97c2db280a88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ccf8d9154fe061aa96f381a2b4c6e76 = $(`<div id="html_1ccf8d9154fe061aa96f381a2b4c6e76" style="width: 100.0%; height: 100.0%;"><b>Illinois Institute of Technology</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_3e48a704a20096fa511e97c2db280a88.setContent(html_1ccf8d9154fe061aa96f381a2b4c6e76);
+            
+        
+
+        marker_bfee006f13c4103d778315d05fc6edd7.bindPopup(popup_3e48a704a20096fa511e97c2db280a88)
+        ;
+
+        
+    
+    
+                marker_bfee006f13c4103d778315d05fc6edd7.setIcon(icon_09c8c31383a9fb718d7046d39d35184c);
+            
+    
+            var marker_bf6ec656ba8c8f81d944fa91a719833f = L.marker(
+                [34.8253019, -116.0833144],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_0e80449e0850bfe5d30a22e0faf2237b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b80af588f45385e8feda253e18704fdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8458acf8c76072e5541e3c1c6150703f = $(`<div id="html_8458acf8c76072e5541e3c1c6150703f" style="width: 100.0%; height: 100.0%;"><b>California State University San Bernardino</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_b80af588f45385e8feda253e18704fdd.setContent(html_8458acf8c76072e5541e3c1c6150703f);
+            
+        
+
+        marker_bf6ec656ba8c8f81d944fa91a719833f.bindPopup(popup_b80af588f45385e8feda253e18704fdd)
+        ;
+
+        
+    
+    
+                marker_bf6ec656ba8c8f81d944fa91a719833f.setIcon(icon_0e80449e0850bfe5d30a22e0faf2237b);
+            
+    
+            var marker_380b1235a868223c8591d532f1fc4c90 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_0bcf07aaa46543851c20b0c5946f40b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a77c94792fe46fe223cf10d116dd71f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_956819ba6f12fa86df026d2bb3099dff = $(`<div id="html_956819ba6f12fa86df026d2bb3099dff" style="width: 100.0%; height: 100.0%;"><b>City University of Seattle</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_a77c94792fe46fe223cf10d116dd71f3.setContent(html_956819ba6f12fa86df026d2bb3099dff);
+            
+        
+
+        marker_380b1235a868223c8591d532f1fc4c90.bindPopup(popup_a77c94792fe46fe223cf10d116dd71f3)
+        ;
+
+        
+    
+    
+                marker_380b1235a868223c8591d532f1fc4c90.setIcon(icon_0bcf07aaa46543851c20b0c5946f40b2);
+            
+    
+            var marker_c1c22e01cc6b18405cf1e56c1a727bd3 = L.marker(
+                [39.7284945, -121.8374777],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_7c82fcc0bdc9432abc39b1cba5046654 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83dad93a34604f293ca702c12ddca3b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f63579c36e2bae430ce0471b2796263f = $(`<div id="html_f63579c36e2bae430ce0471b2796263f" style="width: 100.0%; height: 100.0%;"><b>California State University, Chico</b><br>Cost: Budget (<=$20k)<br>Scholarships: Yes</div>`)[0];
+                popup_83dad93a34604f293ca702c12ddca3b4.setContent(html_f63579c36e2bae430ce0471b2796263f);
+            
+        
+
+        marker_c1c22e01cc6b18405cf1e56c1a727bd3.bindPopup(popup_83dad93a34604f293ca702c12ddca3b4)
+        ;
+
+        
+    
+    
+                marker_c1c22e01cc6b18405cf1e56c1a727bd3.setIcon(icon_7c82fcc0bdc9432abc39b1cba5046654);
+            
+    
+            var marker_9361a759b13b8adea6d600270da98113 = L.marker(
+                [47.6694141, -122.1238767],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_e15c8671aa9b166cdc7d9b719d2cab11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8704b13cb6fe30c28e0433562ae12425 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c09dece48e8127184ffd4d8c6834b6d = $(`<div id="html_1c09dece48e8127184ffd4d8c6834b6d" style="width: 100.0%; height: 100.0%;"><b>DigiPen Institute of Technology</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_8704b13cb6fe30c28e0433562ae12425.setContent(html_1c09dece48e8127184ffd4d8c6834b6d);
+            
+        
+
+        marker_9361a759b13b8adea6d600270da98113.bindPopup(popup_8704b13cb6fe30c28e0433562ae12425)
+        ;
+
+        
+    
+    
+                marker_9361a759b13b8adea6d600270da98113.setIcon(icon_e15c8671aa9b166cdc7d9b719d2cab11);
+            
+    
+            var marker_e7537c6e173d228f9a50d8e3bcc59465 = L.marker(
+                [34.1008426, -117.7678355],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_0f0a44f4c83cb4524c2a9fcd141ffe18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e1e6cd37a09df54722877e99143c1d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6815104063a7b0b2ca16f3eabf2a643d = $(`<div id="html_6815104063a7b0b2ca16f3eabf2a643d" style="width: 100.0%; height: 100.0%;"><b>University of La Verne</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_7e1e6cd37a09df54722877e99143c1d0.setContent(html_6815104063a7b0b2ca16f3eabf2a643d);
+            
+        
+
+        marker_e7537c6e173d228f9a50d8e3bcc59465.bindPopup(popup_7e1e6cd37a09df54722877e99143c1d0)
+        ;
+
+        
+    
+    
+                marker_e7537c6e173d228f9a50d8e3bcc59465.setIcon(icon_0f0a44f4c83cb4524c2a9fcd141ffe18);
+            
+    
+            var marker_a6d7a5d09f595a4d821f369b1c22e894 = L.marker(
+                [41.6529143, -83.5378173],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_2313b92546b9cfacc08305b1813288ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3dca79303bf33734d066c458bf7466fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d38b585c068ac4804b743d6266d10ef = $(`<div id="html_1d38b585c068ac4804b743d6266d10ef" style="width: 100.0%; height: 100.0%;"><b>University of Toledo</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_3dca79303bf33734d066c458bf7466fe.setContent(html_1d38b585c068ac4804b743d6266d10ef);
+            
+        
+
+        marker_a6d7a5d09f595a4d821f369b1c22e894.bindPopup(popup_3dca79303bf33734d066c458bf7466fe)
+        ;
+
+        
+    
+    
+                marker_a6d7a5d09f595a4d821f369b1c22e894.setIcon(icon_2313b92546b9cfacc08305b1813288ee);
+            
+    
+            var marker_c732cad339c088ab47a39f2052e3e1e7 = L.marker(
+                [43.698078, -85.483656],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_3f1d92cfd39107c9766c40dd6351476c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_795abce561cad84765859575d5aca7a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84600b4ca9634f0d493fec4140daf70b = $(`<div id="html_84600b4ca9634f0d493fec4140daf70b" style="width: 100.0%; height: 100.0%;"><b>Ferris State University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_795abce561cad84765859575d5aca7a7.setContent(html_84600b4ca9634f0d493fec4140daf70b);
+            
+        
+
+        marker_c732cad339c088ab47a39f2052e3e1e7.bindPopup(popup_795abce561cad84765859575d5aca7a7)
+        ;
+
+        
+    
+    
+                marker_c732cad339c088ab47a39f2052e3e1e7.setIcon(icon_3f1d92cfd39107c9766c40dd6351476c);
+            
+    
+            var marker_edfaa1d13f8b132d5e4130857ae64ff4 = L.marker(
+                [42.453492, -75.0629531],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_ec0bfbc29546df2bd44fb04a702810f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0790827c7fa65f4a16769d2103093ef7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fe9e745ce1e10c6625fe29666fd8f84 = $(`<div id="html_9fe9e745ce1e10c6625fe29666fd8f84" style="width: 100.0%; height: 100.0%;"><b>State University of New York at Oneonta</b><br>Cost: Budget (<=$20k)<br>Scholarships: No</div>`)[0];
+                popup_0790827c7fa65f4a16769d2103093ef7.setContent(html_9fe9e745ce1e10c6625fe29666fd8f84);
+            
+        
+
+        marker_edfaa1d13f8b132d5e4130857ae64ff4.bindPopup(popup_0790827c7fa65f4a16769d2103093ef7)
+        ;
+
+        
+    
+    
+                marker_edfaa1d13f8b132d5e4130857ae64ff4.setIcon(icon_ec0bfbc29546df2bd44fb04a702810f6);
+            
+    
+            var marker_00c44907db1bf055fca7926a633fb041 = L.marker(
+                [42.5083272, -89.031784],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_db112de2c8ad8d0372bd13208ba7b3cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_661ddc992b45e2581f5ceee4e7df99d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f6493bf7fb4e0435bfae4ffcd9f577d = $(`<div id="html_1f6493bf7fb4e0435bfae4ffcd9f577d" style="width: 100.0%; height: 100.0%;"><b>Beloit College</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_661ddc992b45e2581f5ceee4e7df99d7.setContent(html_1f6493bf7fb4e0435bfae4ffcd9f577d);
+            
+        
+
+        marker_00c44907db1bf055fca7926a633fb041.bindPopup(popup_661ddc992b45e2581f5ceee4e7df99d7)
+        ;
+
+        
+    
+    
+                marker_00c44907db1bf055fca7926a633fb041.setIcon(icon_db112de2c8ad8d0372bd13208ba7b3cb);
+            
+    
+            var marker_a1061aea05a25b017b6b10b799471cfc = L.marker(
+                [46.9970635, -120.545122],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_c51f291bf0b67131d86170cf6a7b13f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e3d44bf701b9493bfd05fec6ba1d5ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a8228af8aac2eb8b961e3f7b28a0276 = $(`<div id="html_2a8228af8aac2eb8b961e3f7b28a0276" style="width: 100.0%; height: 100.0%;"><b>Central Washington University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_4e3d44bf701b9493bfd05fec6ba1d5ec.setContent(html_2a8228af8aac2eb8b961e3f7b28a0276);
+            
+        
+
+        marker_a1061aea05a25b017b6b10b799471cfc.bindPopup(popup_4e3d44bf701b9493bfd05fec6ba1d5ec)
+        ;
+
+        
+    
+    
+                marker_a1061aea05a25b017b6b10b799471cfc.setIcon(icon_c51f291bf0b67131d86170cf6a7b13f9);
+            
+    
+            var marker_06de30fbee3a50cb72b79d01b9be5adc = L.marker(
+                [41.6173959, -87.5220108],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_344c7f3433d213bf8dde2d610b2e049d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43257502ba4e4418e6b66963c7c4a024 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e184bb909e3b5e292a96faa064a18d23 = $(`<div id="html_e184bb909e3b5e292a96faa064a18d23" style="width: 100.0%; height: 100.0%;"><b>Purdue University Northwest</b><br>Cost: Budget (<=$20k)<br>Scholarships: Info given</div>`)[0];
+                popup_43257502ba4e4418e6b66963c7c4a024.setContent(html_e184bb909e3b5e292a96faa064a18d23);
+            
+        
+
+        marker_06de30fbee3a50cb72b79d01b9be5adc.bindPopup(popup_43257502ba4e4418e6b66963c7c4a024)
+        ;
+
+        
+    
+    
+                marker_06de30fbee3a50cb72b79d01b9be5adc.setIcon(icon_344c7f3433d213bf8dde2d610b2e049d);
+            
+    
+            var marker_894472aab64178d335282a7d25d706d8 = L.marker(
+                [45.5202471, -122.674194],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_7d43ccffc658aa48425a370732530d25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_851c027e6caec7e7e48d496d61d1019a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0790e21d1f34d65d81c87a6645e5ad4 = $(`<div id="html_a0790e21d1f34d65d81c87a6645e5ad4" style="width: 100.0%; height: 100.0%;"><b>Portland State University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_851c027e6caec7e7e48d496d61d1019a.setContent(html_a0790e21d1f34d65d81c87a6645e5ad4);
+            
+        
+
+        marker_894472aab64178d335282a7d25d706d8.bindPopup(popup_851c027e6caec7e7e48d496d61d1019a)
+        ;
+
+        
+    
+    
+                marker_894472aab64178d335282a7d25d706d8.setIcon(icon_7d43ccffc658aa48425a370732530d25);
+            
+    
+            var marker_2bbb2b4e5a61e0cbd7b15fcadff53591 = L.marker(
+                [48.7544012, -122.478836],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_a6a56ffbed64d7bd94882475d7c99313 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d985f6dfd9dbbb8834b70fbeb1a216fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1649f2a606bda8bd7b6b8d11b294b93 = $(`<div id="html_d1649f2a606bda8bd7b6b8d11b294b93" style="width: 100.0%; height: 100.0%;"><b>Western Washington University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_d985f6dfd9dbbb8834b70fbeb1a216fa.setContent(html_d1649f2a606bda8bd7b6b8d11b294b93);
+            
+        
+
+        marker_2bbb2b4e5a61e0cbd7b15fcadff53591.bindPopup(popup_d985f6dfd9dbbb8834b70fbeb1a216fa)
+        ;
+
+        
+    
+    
+                marker_2bbb2b4e5a61e0cbd7b15fcadff53591.setIcon(icon_a6a56ffbed64d7bd94882475d7c99313);
+            
+    
+            var marker_9daaa43cb12e3f28d9d6c97bc5b90b1a = L.marker(
+                [42.098698, -75.9125187],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_6181f222f4bd3d17160d81b6b9d3bb1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9681f1e9623e9b662b9be1ca889a21f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8a01448b0e75766ff3f4aa99c555924 = $(`<div id="html_c8a01448b0e75766ff3f4aa99c555924" style="width: 100.0%; height: 100.0%;"><b>Binghamton University, SUNY</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_9681f1e9623e9b662b9be1ca889a21f6.setContent(html_c8a01448b0e75766ff3f4aa99c555924);
+            
+        
+
+        marker_9daaa43cb12e3f28d9d6c97bc5b90b1a.bindPopup(popup_9681f1e9623e9b662b9be1ca889a21f6)
+        ;
+
+        
+    
+    
+                marker_9daaa43cb12e3f28d9d6c97bc5b90b1a.setIcon(icon_6181f222f4bd3d17160d81b6b9d3bb1d);
+            
+    
+            var marker_3cb6851b3126a61dbd92517a4bc29279 = L.marker(
+                [46.7323875, -117.000165],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_ae0ad056bc707f19be946c2730866329 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e330c325ab4afd225256858e0ecd9da0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b8d002427fc450220bf8a18e56289dc = $(`<div id="html_3b8d002427fc450220bf8a18e56289dc" style="width: 100.0%; height: 100.0%;"><b>University of Idaho</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_e330c325ab4afd225256858e0ecd9da0.setContent(html_3b8d002427fc450220bf8a18e56289dc);
+            
+        
+
+        marker_3cb6851b3126a61dbd92517a4bc29279.bindPopup(popup_e330c325ab4afd225256858e0ecd9da0)
+        ;
+
+        
+    
+    
+                marker_3cb6851b3126a61dbd92517a4bc29279.setIcon(icon_ae0ad056bc707f19be946c2730866329);
+            
+    
+            var marker_371e77f7190573445b13ffb3ec3abf1d = L.marker(
+                [45.5202471, -122.674194],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_35bfb3f394fffd3d63df618fb9baf691 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e75e609ecb8d0fa1489bc63423364c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99a00bc73f9771f94edcb5df5b40b679 = $(`<div id="html_99a00bc73f9771f94edcb5df5b40b679" style="width: 100.0%; height: 100.0%;"><b>University of Portland</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_2e75e609ecb8d0fa1489bc63423364c3.setContent(html_99a00bc73f9771f94edcb5df5b40b679);
+            
+        
+
+        marker_371e77f7190573445b13ffb3ec3abf1d.bindPopup(popup_2e75e609ecb8d0fa1489bc63423364c3)
+        ;
+
+        
+    
+    
+                marker_371e77f7190573445b13ffb3ec3abf1d.setIcon(icon_35bfb3f394fffd3d63df618fb9baf691);
+            
+    
+            var marker_f2ddfa96e20167fb4fb203b223d664e7 = L.marker(
+                [41.4729285, -71.5223479],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_0e935918e14024b5aefef65f2682b60a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_414e9dc73719ad95e13b7d6c3c2093a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8fdbb23983011fb8ae3a1bce78ca426 = $(`<div id="html_f8fdbb23983011fb8ae3a1bce78ca426" style="width: 100.0%; height: 100.0%;"><b>University of Rhode Island</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_414e9dc73719ad95e13b7d6c3c2093a5.setContent(html_f8fdbb23983011fb8ae3a1bce78ca426);
+            
+        
+
+        marker_f2ddfa96e20167fb4fb203b223d664e7.bindPopup(popup_414e9dc73719ad95e13b7d6c3c2093a5)
+        ;
+
+        
+    
+    
+                marker_f2ddfa96e20167fb4fb203b223d664e7.setIcon(icon_0e935918e14024b5aefef65f2682b60a);
+            
+    
+            var marker_d8b6faf41722cabf6df283d8cd4256fd = L.marker(
+                [33.6856969, -117.825981],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_260b508961921022725ac66900ebe2ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d2685bd80ce04a964e173612a8769dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_944c7c96da154eadbd020dc66acec434 = $(`<div id="html_944c7c96da154eadbd020dc66acec434" style="width: 100.0%; height: 100.0%;"><b>Concordia University lrvine</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_4d2685bd80ce04a964e173612a8769dc.setContent(html_944c7c96da154eadbd020dc66acec434);
+            
+        
+
+        marker_d8b6faf41722cabf6df283d8cd4256fd.bindPopup(popup_4d2685bd80ce04a964e173612a8769dc)
+        ;
+
+        
+    
+    
+                marker_d8b6faf41722cabf6df283d8cd4256fd.setIcon(icon_260b508961921022725ac66900ebe2ae);
+            
+    
+            var marker_11aae4dbd24a9c31ff4b4ba6c01c4431 = L.marker(
+                [39.9527237, -75.1635262],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_6ab696091b5ed54beee5c3d78db88715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41304c8a57e8b74a1cc09f3e0dd31322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43c92393efcd503ec16a6238713d6f81 = $(`<div id="html_43c92393efcd503ec16a6238713d6f81" style="width: 100.0%; height: 100.0%;"><b>Drexel University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_41304c8a57e8b74a1cc09f3e0dd31322.setContent(html_43c92393efcd503ec16a6238713d6f81);
+            
+        
+
+        marker_11aae4dbd24a9c31ff4b4ba6c01c4431.bindPopup(popup_41304c8a57e8b74a1cc09f3e0dd31322)
+        ;
+
+        
+    
+    
+                marker_11aae4dbd24a9c31ff4b4ba6c01c4431.setIcon(icon_6ab696091b5ed54beee5c3d78db88715);
+            
+    
+            var marker_b3742ee07509d32fb64987f0ed80fa03 = L.marker(
+                [39.4667025, -87.4139119],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_2df1875c0e5c2896e32e8309b8c961eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82aa0e13a9dccd13457ce3631543288d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0de377f70273658fa6dcdc3a23e71066 = $(`<div id="html_0de377f70273658fa6dcdc3a23e71066" style="width: 100.0%; height: 100.0%;"><b>Indiana State University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_82aa0e13a9dccd13457ce3631543288d.setContent(html_0de377f70273658fa6dcdc3a23e71066);
+            
+        
+
+        marker_b3742ee07509d32fb64987f0ed80fa03.bindPopup(popup_82aa0e13a9dccd13457ce3631543288d)
+        ;
+
+        
+    
+    
+                marker_b3742ee07509d32fb64987f0ed80fa03.setIcon(icon_2df1875c0e5c2896e32e8309b8c961eb);
+            
+    
+            var marker_ed9348cdeb74c1455648ce88f00ccce5 = L.marker(
+                [41.8994745, -87.9403418],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_054126bbf2cd9bf58b9efa0612380205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b56cd63709b0a24cc0077051a0696e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b712e392773f739e51968bf85a6f5a7d = $(`<div id="html_b712e392773f739e51968bf85a6f5a7d" style="width: 100.0%; height: 100.0%;"><b>Elmhurst University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_5b56cd63709b0a24cc0077051a0696e8.setContent(html_b712e392773f739e51968bf85a6f5a7d);
+            
+        
+
+        marker_ed9348cdeb74c1455648ce88f00ccce5.bindPopup(popup_5b56cd63709b0a24cc0077051a0696e8)
+        ;
+
+        
+    
+    
+                marker_ed9348cdeb74c1455648ce88f00ccce5.setIcon(icon_054126bbf2cd9bf58b9efa0612380205);
+            
+    
+            var marker_e7438f77910290e22307ee372f8fe58e = L.marker(
+                [44.8780191, -93.2209281],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_2537996e86b83ff6de4412355630730c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa56a55a2de9c4eb3c8315b06b496b76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2b6d47de60bee51338793693b3840f5 = $(`<div id="html_c2b6d47de60bee51338793693b3840f5" style="width: 100.0%; height: 100.0%;"><b>University of Minnesota Twin Cities</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_fa56a55a2de9c4eb3c8315b06b496b76.setContent(html_c2b6d47de60bee51338793693b3840f5);
+            
+        
+
+        marker_e7438f77910290e22307ee372f8fe58e.bindPopup(popup_fa56a55a2de9c4eb3c8315b06b496b76)
+        ;
+
+        
+    
+    
+                marker_e7438f77910290e22307ee372f8fe58e.setIcon(icon_2537996e86b83ff6de4412355630730c);
+            
+    
+            var marker_3bd05b8dd0f98c5fcb61492471c02765 = L.marker(
+                [44.9391565, -123.033121],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_35d0eecdf65e5bc0f9a8152627bcc53d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf51c535fbf27f5a439e8e0080545d15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d26d279ba70f626793518650de1be46 = $(`<div id="html_0d26d279ba70f626793518650de1be46" style="width: 100.0%; height: 100.0%;"><b>Willamette University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_cf51c535fbf27f5a439e8e0080545d15.setContent(html_0d26d279ba70f626793518650de1be46);
+            
+        
+
+        marker_3bd05b8dd0f98c5fcb61492471c02765.bindPopup(popup_cf51c535fbf27f5a439e8e0080545d15)
+        ;
+
+        
+    
+    
+                marker_3bd05b8dd0f98c5fcb61492471c02765.setIcon(icon_35d0eecdf65e5bc0f9a8152627bcc53d);
+            
+    
+            var marker_ecc193c14a4b2465d5b98152f35511af = L.marker(
+                [40.908482, -73.1325471],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_082703bd46ae1b1b20fd43792d1d6dac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55f6f0371243bac71b5a4b95ce15703e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4defcff85d9473c8fa1b058a40a72de = $(`<div id="html_e4defcff85d9473c8fa1b058a40a72de" style="width: 100.0%; height: 100.0%;"><b>Stony Brook University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: No</div>`)[0];
+                popup_55f6f0371243bac71b5a4b95ce15703e.setContent(html_e4defcff85d9473c8fa1b058a40a72de);
+            
+        
+
+        marker_ecc193c14a4b2465d5b98152f35511af.bindPopup(popup_55f6f0371243bac71b5a4b95ce15703e)
+        ;
+
+        
+    
+    
+                marker_ecc193c14a4b2465d5b98152f35511af.setIcon(icon_082703bd46ae1b1b20fd43792d1d6dac);
+            
+    
+            var marker_56aa2faae1c145fd1f1508bfb6f4dae4 = L.marker(
+                [47.2455013, -122.438329],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_a98520aca9eabe7ca576f389be11ee5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17ba11a7643bf5a1a5a7be91b27e309b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2818a5c75f9e92e444683a20d343768 = $(`<div id="html_c2818a5c75f9e92e444683a20d343768" style="width: 100.0%; height: 100.0%;"><b>Pacific Lutheran University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_17ba11a7643bf5a1a5a7be91b27e309b.setContent(html_c2818a5c75f9e92e444683a20d343768);
+            
+        
+
+        marker_56aa2faae1c145fd1f1508bfb6f4dae4.bindPopup(popup_17ba11a7643bf5a1a5a7be91b27e309b)
+        ;
+
+        
+    
+    
+                marker_56aa2faae1c145fd1f1508bfb6f4dae4.setIcon(icon_a98520aca9eabe7ca576f389be11ee5c);
+            
+    
+            var marker_48f5e4ad07b4276824f298d72d0a28f3 = L.marker(
+                [37.834897, -122.12883],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_a1269c0dc4d250d49bff2064c5641d43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_251ab775c8ef2265fcce32f2981e6795 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50dcc1840ae70437a73f9f8fc057b72c = $(`<div id="html_50dcc1840ae70437a73f9f8fc057b72c" style="width: 100.0%; height: 100.0%;"><b>Saint Mary's College of California</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_251ab775c8ef2265fcce32f2981e6795.setContent(html_50dcc1840ae70437a73f9f8fc057b72c);
+            
+        
+
+        marker_48f5e4ad07b4276824f298d72d0a28f3.bindPopup(popup_251ab775c8ef2265fcce32f2981e6795)
+        ;
+
+        
+    
+    
+                marker_48f5e4ad07b4276824f298d72d0a28f3.setIcon(icon_a1269c0dc4d250d49bff2064c5641d43);
+            
+    
+            var marker_1ec0098ae5425d1d270cd24a9365c9b1 = L.marker(
+                [28.0785034, -80.6077908],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_c65cb5eba752910f50bcf7e6e975424e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d67297bdb70ff0a7653c31a530653f60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9e8d2b9158c92a40a10c6ba0081eb69 = $(`<div id="html_d9e8d2b9158c92a40a10c6ba0081eb69" style="width: 100.0%; height: 100.0%;"><b>Florida Institute of Technology</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_d67297bdb70ff0a7653c31a530653f60.setContent(html_d9e8d2b9158c92a40a10c6ba0081eb69);
+            
+        
+
+        marker_1ec0098ae5425d1d270cd24a9365c9b1.bindPopup(popup_d67297bdb70ff0a7653c31a530653f60)
+        ;
+
+        
+    
+    
+                marker_1ec0098ae5425d1d270cd24a9365c9b1.setIcon(icon_c65cb5eba752910f50bcf7e6e975424e);
+            
+    
+            var marker_8bded79bc01223c010f67310a095e583 = L.marker(
+                [38.0464066, -84.4970393],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_7b4eb980ab2cc5dd972364d5b86a5fb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_190872ebc3c49fab2d9ed93b0a7961e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3b87efe12468a0cf1c82b45554df3c5 = $(`<div id="html_b3b87efe12468a0cf1c82b45554df3c5" style="width: 100.0%; height: 100.0%;"><b>University of Kentucky</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_190872ebc3c49fab2d9ed93b0a7961e1.setContent(html_b3b87efe12468a0cf1c82b45554df3c5);
+            
+        
+
+        marker_8bded79bc01223c010f67310a095e583.bindPopup(popup_190872ebc3c49fab2d9ed93b0a7961e1)
+        ;
+
+        
+    
+    
+                marker_8bded79bc01223c010f67310a095e583.setIcon(icon_7b4eb980ab2cc5dd972364d5b86a5fb7);
+            
+    
+            var marker_61c32d54ca16da046e59748bc186df06 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_a7b2fac9b5a375a3e5a57cea508a1df6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83aaee8651d31f8bf6c9096e2e34c42f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53ee997b53a6f1779377f1aaf8d50038 = $(`<div id="html_53ee997b53a6f1779377f1aaf8d50038" style="width: 100.0%; height: 100.0%;"><b>Seattle University</b><br>Cost: High (>$35k)<br>Scholarships: Yes</div>`)[0];
+                popup_83aaee8651d31f8bf6c9096e2e34c42f.setContent(html_53ee997b53a6f1779377f1aaf8d50038);
+            
+        
+
+        marker_61c32d54ca16da046e59748bc186df06.bindPopup(popup_83aaee8651d31f8bf6c9096e2e34c42f)
+        ;
+
+        
+    
+    
+                marker_61c32d54ca16da046e59748bc186df06.setIcon(icon_a7b2fac9b5a375a3e5a57cea508a1df6);
+            
+    
+            var marker_f5087d5384be2d9df00e5b860668b2a3 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_3b32f8b4376cb5242a68e92bb17cb4cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f01261cdc1bc7fe18687d531ef71ed0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2e34d02c94003a20cafc86b4e11be14 = $(`<div id="html_b2e34d02c94003a20cafc86b4e11be14" style="width: 100.0%; height: 100.0%;"><b>South Seattle College</b><br>Cost: Budget (<=$20k)<br>Scholarships: Info given</div>`)[0];
+                popup_f01261cdc1bc7fe18687d531ef71ed0f.setContent(html_b2e34d02c94003a20cafc86b4e11be14);
+            
+        
+
+        marker_f5087d5384be2d9df00e5b860668b2a3.bindPopup(popup_f01261cdc1bc7fe18687d531ef71ed0f)
+        ;
+
+        
+    
+    
+                marker_f5087d5384be2d9df00e5b860668b2a3.setIcon(icon_3b32f8b4376cb5242a68e92bb17cb4cc);
+            
+    
+            var marker_6b149b1fa3a0b40606de63d2d6c770a4 = L.marker(
+                [33.8708215, -117.929416],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_8c8aaac0a2bf3e4d78888dc738622c11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6e57a5e0f5655713d20af5353bbd95a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37268b510427ce4fbd81b07bc228c968 = $(`<div id="html_37268b510427ce4fbd81b07bc228c968" style="width: 100.0%; height: 100.0%;"><b>California State University, Fullerton</b><br>Cost: Budget (<=$20k)<br>Scholarships: Info given</div>`)[0];
+                popup_c6e57a5e0f5655713d20af5353bbd95a.setContent(html_37268b510427ce4fbd81b07bc228c968);
+            
+        
+
+        marker_6b149b1fa3a0b40606de63d2d6c770a4.bindPopup(popup_c6e57a5e0f5655713d20af5353bbd95a)
+        ;
+
+        
+    
+    
+                marker_6b149b1fa3a0b40606de63d2d6c770a4.setIcon(icon_8c8aaac0a2bf3e4d78888dc738622c11);
+            
+    
+            var marker_112a38b111eb6e5690d0e8bc2ffde76d = L.marker(
+                [37.6922361, -97.3375448],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_7492b79fc5e343ef15724e8e0cc0e9e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51588acabce56e9bcd8f4d35837d7dc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e9854e24a0fcffd18cc497fda78f08e = $(`<div id="html_9e9854e24a0fcffd18cc497fda78f08e" style="width: 100.0%; height: 100.0%;"><b>Wichita State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Info given</div>`)[0];
+                popup_51588acabce56e9bcd8f4d35837d7dc8.setContent(html_9e9854e24a0fcffd18cc497fda78f08e);
+            
+        
+
+        marker_112a38b111eb6e5690d0e8bc2ffde76d.bindPopup(popup_51588acabce56e9bcd8f4d35837d7dc8)
+        ;
+
+        
+    
+    
+                marker_112a38b111eb6e5690d0e8bc2ffde76d.setIcon(icon_7492b79fc5e343ef15724e8e0cc0e9e8);
+            
+    
+            var marker_a4b763d940b240ef709ec8911b453d23 = L.marker(
+                [38.8339578, -104.825348],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_bf1faba75e257820433dce9ac7b02714 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_faa264d7401cbc28ade0c923e319df5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_765d63973107da756186600996d468e7 = $(`<div id="html_765d63973107da756186600996d468e7" style="width: 100.0%; height: 100.0%;"><b>University of Colorado Colorado Springs</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_faa264d7401cbc28ade0c923e319df5c.setContent(html_765d63973107da756186600996d468e7);
+            
+        
+
+        marker_a4b763d940b240ef709ec8911b453d23.bindPopup(popup_faa264d7401cbc28ade0c923e319df5c)
+        ;
+
+        
+    
+    
+                marker_a4b763d940b240ef709ec8911b453d23.setIcon(icon_bf1faba75e257820433dce9ac7b02714);
+            
+    
+            var marker_5b8410fb11cf7f14d862a707490eef34 = L.marker(
+                [32.7174202, -117.162772],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_c133d2626254abebdc19e408163adc3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_352f81cfcf3070cfd43be84dc459e387 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68af05b498bccae2b78fd0a860d04ad6 = $(`<div id="html_68af05b498bccae2b78fd0a860d04ad6" style="width: 100.0%; height: 100.0%;"><b>San Diego State University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Info given</div>`)[0];
+                popup_352f81cfcf3070cfd43be84dc459e387.setContent(html_68af05b498bccae2b78fd0a860d04ad6);
+            
+        
+
+        marker_5b8410fb11cf7f14d862a707490eef34.bindPopup(popup_352f81cfcf3070cfd43be84dc459e387)
+        ;
+
+        
+    
+    
+                marker_5b8410fb11cf7f14d862a707490eef34.setIcon(icon_c133d2626254abebdc19e408163adc3c);
+            
+    
+            var marker_d25f3d8da8cb447a501d0d3ab85c8991 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_dedd77deb1c9930fb55a1a9032f98e6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1469cf4eb3d69de9006b43e62424b475 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92e9d01ab6745718f8b00d4f0a854391 = $(`<div id="html_92e9d01ab6745718f8b00d4f0a854391" style="width: 100.0%; height: 100.0%;"><b>University of Washington - Seattle campus</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_1469cf4eb3d69de9006b43e62424b475.setContent(html_92e9d01ab6745718f8b00d4f0a854391);
+            
+        
+
+        marker_d25f3d8da8cb447a501d0d3ab85c8991.bindPopup(popup_1469cf4eb3d69de9006b43e62424b475)
+        ;
+
+        
+    
+    
+                marker_d25f3d8da8cb447a501d0d3ab85c8991.setIcon(icon_dedd77deb1c9930fb55a1a9032f98e6d);
+            
+    
+            var marker_f4c3a39939bb11a6d93251e57000e7ec = L.marker(
+                [47.4892246, -117.579304],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_1b43bb441eb5f2f301b9b3f14e62c15e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f13f3e90714f83073c1bc3bdc07c673 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e05152b4c872ce7b4af71b37d880caa2 = $(`<div id="html_e05152b4c872ce7b4af71b37d880caa2" style="width: 100.0%; height: 100.0%;"><b>Eastern Washington University</b><br>Cost: Budget (<=$20k)<br>Scholarships: Info given</div>`)[0];
+                popup_2f13f3e90714f83073c1bc3bdc07c673.setContent(html_e05152b4c872ce7b4af71b37d880caa2);
+            
+        
+
+        marker_f4c3a39939bb11a6d93251e57000e7ec.bindPopup(popup_2f13f3e90714f83073c1bc3bdc07c673)
+        ;
+
+        
+    
+    
+                marker_f4c3a39939bb11a6d93251e57000e7ec.setIcon(icon_1b43bb441eb5f2f301b9b3f14e62c15e);
+            
+    
+            var marker_3005a72aea2485cad4036fcab5ac252d = L.marker(
+                [36.62593, -121.816926],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_e5e22d8048a0cccde661149df7cf600e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b573b16e1de38edeef077778c205e84d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b92bc8a762369870a5e0e6a4ed28cf8a = $(`<div id="html_b92bc8a762369870a5e0e6a4ed28cf8a" style="width: 100.0%; height: 100.0%;"><b>California State University Monterey Bay</b><br>Cost: Budget (<=$20k)<br>Scholarships: No</div>`)[0];
+                popup_b573b16e1de38edeef077778c205e84d.setContent(html_b92bc8a762369870a5e0e6a4ed28cf8a);
+            
+        
+
+        marker_3005a72aea2485cad4036fcab5ac252d.bindPopup(popup_b573b16e1de38edeef077778c205e84d)
+        ;
+
+        
+    
+    
+                marker_3005a72aea2485cad4036fcab5ac252d.setIcon(icon_e5e22d8048a0cccde661149df7cf600e);
+            
+    
+            var marker_9cc008dba22b1a733ce7941a5c72a606 = L.marker(
+                [46.7304268, -117.173895],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_dc48e3e549f298f200c965d5b1040ccf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74d99345c2d0ca6fc33f133c129fe256 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb1d7e7987d5c0277604ea915eb6fd0d = $(`<div id="html_cb1d7e7987d5c0277604ea915eb6fd0d" style="width: 100.0%; height: 100.0%;"><b>Washington State University</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_74d99345c2d0ca6fc33f133c129fe256.setContent(html_cb1d7e7987d5c0277604ea915eb6fd0d);
+            
+        
+
+        marker_9cc008dba22b1a733ce7941a5c72a606.bindPopup(popup_74d99345c2d0ca6fc33f133c129fe256)
+        ;
+
+        
+    
+    
+                marker_9cc008dba22b1a733ce7941a5c72a606.setIcon(icon_dc48e3e549f298f200c965d5b1040ccf);
+            
+    
+            var marker_171c633dd3ae601e764412cdf923b18e = L.marker(
+                [36.7394421, -119.78483],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_fd74ab8fc70c5f82ba0144c9b0c7a7da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12cb312f7a1ed49e1e49800415c2250a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8002bb8a3d63b98cc09d803a57a658f1 = $(`<div id="html_8002bb8a3d63b98cc09d803a57a658f1" style="width: 100.0%; height: 100.0%;"><b>California State University, Fresno</b><br>Cost: Budget (<=$20k)<br>Scholarships: No</div>`)[0];
+                popup_12cb312f7a1ed49e1e49800415c2250a.setContent(html_8002bb8a3d63b98cc09d803a57a658f1);
+            
+        
+
+        marker_171c633dd3ae601e764412cdf923b18e.bindPopup(popup_12cb312f7a1ed49e1e49800415c2250a)
+        ;
+
+        
+    
+    
+                marker_171c633dd3ae601e764412cdf923b18e.setIcon(icon_fd74ab8fc70c5f82ba0144c9b0c7a7da);
+            
+    
+            var marker_bc01671f66e9c7ed1bcb80ef6772a33b = L.marker(
+                [38.5810606, -121.493895],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_12124b61ad33c076fc46790e0f83e401 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13c8d5c40eac3d7ed8e3d81a5a76c5f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0592c269de874790abc247ee848f9167 = $(`<div id="html_0592c269de874790abc247ee848f9167" style="width: 100.0%; height: 100.0%;"><b>California State University, Sacramento</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_13c8d5c40eac3d7ed8e3d81a5a76c5f2.setContent(html_0592c269de874790abc247ee848f9167);
+            
+        
+
+        marker_bc01671f66e9c7ed1bcb80ef6772a33b.bindPopup(popup_13c8d5c40eac3d7ed8e3d81a5a76c5f2)
+        ;
+
+        
+    
+    
+                marker_bc01671f66e9c7ed1bcb80ef6772a33b.setIcon(icon_12124b61ad33c076fc46790e0f83e401);
+            
+    
+            var marker_559e93902f1bc6f413f84b29ba332c56 = L.marker(
+                [39.1836082, -96.5716694],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_afa1ee671d693194794200a90912b215 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93bd5ceb3492f9038edeff773fe72ddd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff741f009c5a78dbe3c1e5eb17d025db = $(`<div id="html_ff741f009c5a78dbe3c1e5eb17d025db" style="width: 100.0%; height: 100.0%;"><b>Kansas State University</b><br>Cost: Moderate ($20k-$35k)<br>Scholarships: No</div>`)[0];
+                popup_93bd5ceb3492f9038edeff773fe72ddd.setContent(html_ff741f009c5a78dbe3c1e5eb17d025db);
+            
+        
+
+        marker_559e93902f1bc6f413f84b29ba332c56.bindPopup(popup_93bd5ceb3492f9038edeff773fe72ddd)
+        ;
+
+        
+    
+    
+                marker_559e93902f1bc6f413f84b29ba332c56.setIcon(icon_afa1ee671d693194794200a90912b215);
+            
+    
+            var marker_e46c896bb312b580caaf0be03e23cc8b = L.marker(
+                [33.6856969, -117.825981],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_a3ba5dd04fec1f6fe77882a756bf39ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acee593b1eb8db69556d5994f9cd5a1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22f78129ce50d539675fc6e5c5265257 = $(`<div id="html_22f78129ce50d539675fc6e5c5265257" style="width: 100.0%; height: 100.0%;"><b>UC Irvine</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_acee593b1eb8db69556d5994f9cd5a1d.setContent(html_22f78129ce50d539675fc6e5c5265257);
+            
+        
+
+        marker_e46c896bb312b580caaf0be03e23cc8b.bindPopup(popup_acee593b1eb8db69556d5994f9cd5a1d)
+        ;
+
+        
+    
+    
+                marker_e46c896bb312b580caaf0be03e23cc8b.setIcon(icon_a3ba5dd04fec1f6fe77882a756bf39ea);
+            
+    
+            var marker_2fa246d268bdaf2ad37d8b35561e9c87 = L.marker(
+                [38.8950368, -77.0365427],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_92d3d8434b3a3d5590954f5997e39e2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cb2d09cfc8dac4522152db8d167a2d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37f1424a2074703d1f34468bd6830b02 = $(`<div id="html_37f1424a2074703d1f34468bd6830b02" style="width: 100.0%; height: 100.0%;"><b>The George Washington University</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_2cb2d09cfc8dac4522152db8d167a2d9.setContent(html_37f1424a2074703d1f34468bd6830b02);
+            
+        
+
+        marker_2fa246d268bdaf2ad37d8b35561e9c87.bindPopup(popup_2cb2d09cfc8dac4522152db8d167a2d9)
+        ;
+
+        
+    
+    
+                marker_2fa246d268bdaf2ad37d8b35561e9c87.setIcon(icon_92d3d8434b3a3d5590954f5997e39e2a);
+            
+    
+            var marker_411475d61afbec1d9a569e2c73b302ab = L.marker(
+                [47.7623204, -122.2054035],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_5152902a62c92cd6809c314f7dcbdadc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a44bd5c588ae510b8f916509ee75ca0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cb7c4e5c06e1f926d2f920592782adc = $(`<div id="html_7cb7c4e5c06e1f926d2f920592782adc" style="width: 100.0%; height: 100.0%;"><b>UW Bothell</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_8a44bd5c588ae510b8f916509ee75ca0.setContent(html_7cb7c4e5c06e1f926d2f920592782adc);
+            
+        
+
+        marker_411475d61afbec1d9a569e2c73b302ab.bindPopup(popup_8a44bd5c588ae510b8f916509ee75ca0)
+        ;
+
+        
+    
+    
+                marker_411475d61afbec1d9a569e2c73b302ab.setIcon(icon_5152902a62c92cd6809c314f7dcbdadc);
+            
+    
+            var marker_3b217ff6e59c657890d40d0937270087 = L.marker(
+                [40.4416941, -79.9900861],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_f029838eef5a9f9b6be14c18b22be7ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_154c87b816616e0c52e4a1566894db86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77e7c72b73eaceb5410e7d7634a8a75b = $(`<div id="html_77e7c72b73eaceb5410e7d7634a8a75b" style="width: 100.0%; height: 100.0%;"><b>University of Pittsburgh</b><br>Cost: High (>$35k)<br>Scholarships: No</div>`)[0];
+                popup_154c87b816616e0c52e4a1566894db86.setContent(html_77e7c72b73eaceb5410e7d7634a8a75b);
+            
+        
+
+        marker_3b217ff6e59c657890d40d0937270087.bindPopup(popup_154c87b816616e0c52e4a1566894db86)
+        ;
+
+        
+    
+    
+                marker_3b217ff6e59c657890d40d0937270087.setIcon(icon_f029838eef5a9f9b6be14c18b22be7ed);
+            
+    
+            var marker_f92f1b4b4c964431655faddc7d015830 = L.marker(
+                [38.951883, -92.3337366],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_12077f92dfeab903c132d6c1a65938fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62b04a23718e50e61bdfa8ec06fe4393 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15c5dd50b7e4d9b0a79aa178766d4de3 = $(`<div id="html_15c5dd50b7e4d9b0a79aa178766d4de3" style="width: 100.0%; height: 100.0%;"><b>University of Missouri</b><br>Cost: High (>$35k)<br>Scholarships: No</div>`)[0];
+                popup_62b04a23718e50e61bdfa8ec06fe4393.setContent(html_15c5dd50b7e4d9b0a79aa178766d4de3);
+            
+        
+
+        marker_f92f1b4b4c964431655faddc7d015830.bindPopup(popup_62b04a23718e50e61bdfa8ec06fe4393)
+        ;
+
+        
+    
+    
+                marker_f92f1b4b4c964431655faddc7d015830.setIcon(icon_12077f92dfeab903c132d6c1a65938fa);
+            
+    
+            var marker_5d9d055d6909becfaf6fc38206891ae6 = L.marker(
+                [33.9824949, -117.374238],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_5b95f8b93e5f048ed4101bc507ac1cab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57ff1c19172060f15a22638f9eec4752 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_799bbef4e922a253aafefd9b0e22fe97 = $(`<div id="html_799bbef4e922a253aafefd9b0e22fe97" style="width: 100.0%; height: 100.0%;"><b>University of California Riverside</b><br>Cost: High (>$35k)<br>Scholarships: No</div>`)[0];
+                popup_57ff1c19172060f15a22638f9eec4752.setContent(html_799bbef4e922a253aafefd9b0e22fe97);
+            
+        
+
+        marker_5d9d055d6909becfaf6fc38206891ae6.bindPopup(popup_57ff1c19172060f15a22638f9eec4752)
+        ;
+
+        
+    
+    
+                marker_5d9d055d6909becfaf6fc38206891ae6.setIcon(icon_5b95f8b93e5f048ed4101bc507ac1cab);
+            
+    
+            var marker_bffeae8380187a5d359f183f3525a3a0 = L.marker(
+                [43.074761, -89.3837613],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_d72bdb650732fb589377e5df0de0a604 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9672a965b5aa9299e517981ab0498d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d5158eeab1d8fc3440794a058b41466 = $(`<div id="html_9d5158eeab1d8fc3440794a058b41466" style="width: 100.0%; height: 100.0%;"><b>University of Wisconsin - Madison</b><br>Cost: High (>$35k)<br>Scholarships: Unknown</div>`)[0];
+                popup_f9672a965b5aa9299e517981ab0498d5.setContent(html_9d5158eeab1d8fc3440794a058b41466);
+            
+        
+
+        marker_bffeae8380187a5d359f183f3525a3a0.bindPopup(popup_f9672a965b5aa9299e517981ab0498d5)
+        ;
+
+        
+    
+    
+                marker_bffeae8380187a5d359f183f3525a3a0.setIcon(icon_d72bdb650732fb589377e5df0de0a604);
+            
+    
+            var marker_9975228757e461ad5e82d1eadb39c897 = L.marker(
+                [32.2228765, -110.974847],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_da4a3662144d3f487ed8b632e12e9d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da1ff8b92cfb49a790033aa1da506e3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b58046cca49b82afdc0e4c268c3e4f0d = $(`<div id="html_b58046cca49b82afdc0e4c268c3e4f0d" style="width: 100.0%; height: 100.0%;"><b>University of Arizona</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_da1ff8b92cfb49a790033aa1da506e3e.setContent(html_b58046cca49b82afdc0e4c268c3e4f0d);
+            
+        
+
+        marker_9975228757e461ad5e82d1eadb39c897.bindPopup(popup_da1ff8b92cfb49a790033aa1da506e3e)
+        ;
+
+        
+    
+    
+                marker_9975228757e461ad5e82d1eadb39c897.setIcon(icon_da4a3662144d3f487ed8b632e12e9d4d);
+            
+    
+            var marker_a1487a18258501bb72593e83ff904b41 = L.marker(
+                [45.5202471, -122.674194],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_3aa055ace7007a8033b1af5d9b6a19d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d38d6bf9cfb8c9adc4c9d3972717b119 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9efad554f9377b7e935cb75da6949070 = $(`<div id="html_9efad554f9377b7e935cb75da6949070" style="width: 100.0%; height: 100.0%;"><b>Reed College</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_d38d6bf9cfb8c9adc4c9d3972717b119.setContent(html_9efad554f9377b7e935cb75da6949070);
+            
+        
+
+        marker_a1487a18258501bb72593e83ff904b41.bindPopup(popup_d38d6bf9cfb8c9adc4c9d3972717b119)
+        ;
+
+        
+    
+    
+                marker_a1487a18258501bb72593e83ff904b41.setIcon(icon_3aa055ace7007a8033b1af5d9b6a19d4);
+            
+    
+            var marker_0f22b1567f64ac9af95aa49bdb4f34f8 = L.marker(
+                [47.2455013, -122.438329],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_a3c24f6db521af1f1dc9505d4d2ecb92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f6f1dfb0326434ce6c11e890c6c6725 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5749435926447e22986f930d3f04145e = $(`<div id="html_5749435926447e22986f930d3f04145e" style="width: 100.0%; height: 100.0%;"><b>The University of Washington Tacoma</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_4f6f1dfb0326434ce6c11e890c6c6725.setContent(html_5749435926447e22986f930d3f04145e);
+            
+        
+
+        marker_0f22b1567f64ac9af95aa49bdb4f34f8.bindPopup(popup_4f6f1dfb0326434ce6c11e890c6c6725)
+        ;
+
+        
+    
+    
+                marker_0f22b1567f64ac9af95aa49bdb4f34f8.setIcon(icon_a3c24f6db521af1f1dc9505d4d2ecb92);
+            
+    
+            var marker_369afbfc47218f8f51019b1666706bfc = L.marker(
+                [35.1987522, -111.651822],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_bd5ce8d1d3f498564b402c8ac36b71e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3205eabe6416ec148affdd1b4ff6bda8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f44b7c1cf41ed7da8fb210b721568e94 = $(`<div id="html_f44b7c1cf41ed7da8fb210b721568e94" style="width: 100.0%; height: 100.0%;"><b>Northern Arizona University</b><br>Cost: High (>$35k)<br>Scholarships: Info given</div>`)[0];
+                popup_3205eabe6416ec148affdd1b4ff6bda8.setContent(html_f44b7c1cf41ed7da8fb210b721568e94);
+            
+        
+
+        marker_369afbfc47218f8f51019b1666706bfc.bindPopup(popup_3205eabe6416ec148affdd1b4ff6bda8)
+        ;
+
+        
+    
+    
+                marker_369afbfc47218f8f51019b1666706bfc.setIcon(icon_bd5ce8d1d3f498564b402c8ac36b71e6);
+            
+    
+            var marker_70833a2c40959442cf28a216ea641b8c = L.marker(
+                [41.7728699, -88.1479278],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_4b4365e24efa2ab6249f29f5729e1d02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b4c750658f72002c84af773299285ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_144d01c0a1ff2d8a3e12d683a0317bea = $(`<div id="html_144d01c0a1ff2d8a3e12d683a0317bea" style="width: 100.0%; height: 100.0%;"><b>North Central College</b><br>Cost: High (>$35k)<br>Scholarships: No</div>`)[0];
+                popup_5b4c750658f72002c84af773299285ba.setContent(html_144d01c0a1ff2d8a3e12d683a0317bea);
+            
+        
+
+        marker_70833a2c40959442cf28a216ea641b8c.bindPopup(popup_5b4c750658f72002c84af773299285ba)
+        ;
+
+        
+    
+    
+                marker_70833a2c40959442cf28a216ea641b8c.setIcon(icon_4b4365e24efa2ab6249f29f5729e1d02);
+            
+    
+            var marker_b5aad9fb2388c641254341f70e01e5d2 = L.marker(
+                [37.453773, -122.2058272],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_fd7841e6a5ea1908d099c39e7b49b1b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91d46ab81f965b5a6e577b983fea26de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a532dfde075dc2a8ed2e14596026902 = $(`<div id="html_6a532dfde075dc2a8ed2e14596026902" style="width: 100.0%; height: 100.0%;"><b>Menlo College</b><br>Cost: High (>$35k)<br>Scholarships: Unknown</div>`)[0];
+                popup_91d46ab81f965b5a6e577b983fea26de.setContent(html_6a532dfde075dc2a8ed2e14596026902);
+            
+        
+
+        marker_b5aad9fb2388c641254341f70e01e5d2.bindPopup(popup_91d46ab81f965b5a6e577b983fea26de)
+        ;
+
+        
+    
+    
+                marker_b5aad9fb2388c641254341f70e01e5d2.setIcon(icon_fd7841e6a5ea1908d099c39e7b49b1b7);
+            
+    
+            var marker_dfc3bd7a0b684b8298ff1821b51e7f44 = L.marker(
+                [36.1674263, -115.1484131],
+                {
+}
+            ).addTo(marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975);
+        
+    
+            var icon_30d586284e19dcd740cb79c3b56cd3b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45b73e5303491af6a00f01cf5faa485c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cf690cd9c700951ca62c422eb7a2dc5 = $(`<div id="html_4cf690cd9c700951ca62c422eb7a2dc5" style="width: 100.0%; height: 100.0%;"><b>UNLV-University of Nevada Las Vegas</b><br>Cost: High (>$35k)<br>Scholarships: No</div>`)[0];
+                popup_45b73e5303491af6a00f01cf5faa485c.setContent(html_4cf690cd9c700951ca62c422eb7a2dc5);
+            
+        
+
+        marker_dfc3bd7a0b684b8298ff1821b51e7f44.bindPopup(popup_45b73e5303491af6a00f01cf5faa485c)
+        ;
+
+        
+    
+    
+                marker_dfc3bd7a0b684b8298ff1821b51e7f44.setIcon(icon_30d586284e19dcd740cb79c3b56cd3b7);
+            
+    
+            marker_cluster_ab1999f0bfa92d205ebfa7cd33a84975.addTo(map_756fd6b16a9d89e9ef8bc380cb6cffb5);
+        
+</script>
+</html>
